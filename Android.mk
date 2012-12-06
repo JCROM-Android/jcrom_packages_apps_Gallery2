@@ -1,3 +1,4 @@
+ifeq (,$(findstring $(TARGET_PRODUCT),full_fullgrouper full_negitoro))
 LOCAL_PATH:= $(call my-dir)
 
 include $(CLEAR_VARS)
@@ -47,4 +48,5 @@ include $(call all-makefiles-under, $(LOCAL_PATH))
 # Use the following include to make camera test apk.
 include $(call all-makefiles-under, ../Camera)
 
+endif
 endif
